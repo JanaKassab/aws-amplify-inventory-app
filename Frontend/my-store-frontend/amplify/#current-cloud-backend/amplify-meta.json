@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mystorefrontend-dev-3e096-authRole",
+      "UnauthRoleArn": "arn:aws:iam::361769603098:role/amplify-mystorefrontend-dev-3e096-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::361769603098:role/amplify-mystorefrontend-dev-3e096-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mystorefrontend-dev-3e096-deployment",
+      "UnauthRoleName": "amplify-mystorefrontend-dev-3e096-unauthRole",
+      "StackName": "amplify-mystorefrontend-dev-3e096",
+      "StackId": "arn:aws:cloudformation:us-east-1:361769603098:stack/amplify-mystorefrontend-dev-3e096/43384e00-63d6-11f0-9c16-122eec8fc72b",
+      "AmplifyAppId": "d1zial89hww201"
+    }
+  },
+  "auth": {
+    "mystorefrontend066d7391": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mystorefrontend-dev-3e096-deployment/amplify-cfn-templates/auth/mystorefrontend066d7391-cloudformation-template.json",
+        "logicalId": "authmystorefrontend066d7391"
+      },
+      "lastPushTimeStamp": "2025-07-18T13:03:14.976Z",
+      "output": {
+        "UserPoolId": "us-east-1_6K1bL5DTX",
+        "AppClientIDWeb": "4e2htk7gshchqn9be5if17anee",
+        "AppClientID": "71o6sgcu6erhsq3o38n43c6vfc",
+        "IdentityPoolId": "us-east-1:7b002403-5b5e-4e14-aefd-15d696e2652f",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:361769603098:userpool/us-east-1_6K1bL5DTX",
+        "IdentityPoolName": "mystorefrontend066d7391_identitypool_066d7391__dev",
+        "UserPoolName": "mystorefrontend066d7391_userpool_066d7391"
+      },
+      "lastPushDirHash": "8J1VhEIT2ahX/SUap9IHYeJwHaw="
+    }
+  }
+}
