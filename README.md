@@ -54,7 +54,7 @@ A full-stack inventory management application built with NestJS, React, and AWS 
 
 ### Infrastructure
 - **Cloud Provider**: AWS
-- **Authentication**: AWS Cognito (User Pool ID: `us-east-1_zM5eEuym4`)
+- **Authentication**: AWS Cognito 
 - **Database**: PostgreSQL on AWS RDS
 - **Region**: us-east-1
 
