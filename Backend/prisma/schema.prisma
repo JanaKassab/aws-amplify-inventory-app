@@ -1,0 +1,29 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["inventory"]
+}
+
+model Product {
+  id                 Int                    @id @default(autoincrement())
+  name               String
+  category           String?
+  description        String?
+  price              Decimal                @db.Decimal(10, 2)
+  quantity           Int
+  inStock            Boolean?               @default(true) @map("in_stock")
+  embedding          Unsupported("vector")?
+  createdAt          DateTime?              @default(now()) @map("created_at") @db.Timestamp(6)
+  arabic_name        String?
+  arabic_description String?
+  tags               String?
+  imageUrl           String?
+
+  @@map("products")
+  @@schema("inventory")
+}
